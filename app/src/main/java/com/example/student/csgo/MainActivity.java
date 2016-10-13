@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
             if(acceleration > 15) {
 
                 MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.sound);
+                mediaPlayer.start();
 
                 Toast toast = Toast.makeText(getApplication(), "The Case Has Been Shaken", Toast.LENGTH_SHORT);
                 toast.show();

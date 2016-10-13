@@ -6,7 +6,7 @@ public class Predictions {
 
     private static Predictions predictions;
     private String[] answers;
-    private Random random = new Random();
+    private Random random;
     private int rnd;
 
     private Predictions() {
@@ -15,9 +15,11 @@ public class Predictions {
                 "You have  recieved an AWP Assimov!",
                 "You have  recieved a AUG Fleet Flock!",
                 "You have  recieved a Galil Chatter-Box!",
-                "You have recieved a Karambit Gamma Doppler!"
+                "You have recieved a Karambit Gamma Doppler!",
+                "You have  recieved a MR ZACH!",
 
         };
+        random = new Random();
     }
 
     public static Predictions get() {
